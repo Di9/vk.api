@@ -210,7 +210,7 @@ class Vk{
             $path = realpath($data);
 
             if($path){
-              $files['file' . ($key+1)] = (class_exists('CURLFile', false)) ? new CURLFile(realpath($data)) : '@' . realpath($data);
+              $files['file' . ($key+1)] = (class_exists('CURLFile', false)) ? new \CURLFile(realpath($data)) : '@' . realpath($data);
             }
         }
 
@@ -270,7 +270,7 @@ class Vk{
 
         if(!$path) return false;
 
-        $files['file'] = (class_exists('CURLFile', false)) ? new CURLFile($file) : '@' . $file;
+        $files['file'] = (class_exists('CURLFile', false)) ? new \CURLFile($file) : '@' . $file;
 
         $upload_url = $data_json['upload_url'];
 
@@ -335,7 +335,7 @@ class Vk{
 
             if(!$path) return false;
 
-            $files['video_file'] = (class_exists('CURLFile', false)) ? new CURLFile($file) : '@' . $file;
+            $files['video_file'] = (class_exists('CURLFile', false)) ? new \CURLFile($file) : '@' . $file;
 
             curl_setopt($ch, CURLOPT_POSTFIELDS, $files);
             curl_exec($ch);
