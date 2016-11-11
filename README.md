@@ -1,8 +1,6 @@
 Vkontakte Api for PHP
 ======================
 
-[НА РУССКОМ](README_RU.md)
-
 Work with Vkontakte API for StandAlone application on php.
 
 To work with api you need to perform several actions:
@@ -26,15 +24,8 @@ With composer
 ```php
 <?php
 include 'vendor/autoload.php';
-$v = new Vk();
-?>
-```
+use fdcore\vkapi\Vk;
 
-Without
-
-```php
-<?php
-include 'vk.php';
 $v = new Vk();
 ?>
 ```
