@@ -1,6 +1,7 @@
 {
   "name": "fdcore/vk.api",
   "description": "Vk api extension",
+  "version": "2.0",
   "authors": [
     {
       "name": "Dmitriy Nyashkin",
