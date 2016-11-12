@@ -12,8 +12,22 @@ To work with api you need to perform several actions:
 
 ## Install
 
+add this repo to composer.json
 ```
-composer require fdcore/vk.api
+   "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Di9/vk.api"
+        }
+    ],
+    "require": {
+        "fdcore/vk.api": "v2.x-dev"
+    },
+```
+and use 
+
+```
+composer update
 ```
 
 
